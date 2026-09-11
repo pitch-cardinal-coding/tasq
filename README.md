@@ -24,7 +24,7 @@ pip install .
 ### Start a worker
 
 ```sh
-tq runner --log-level DEBUG
+tq --log-level DEBUG
 ```
 
 ### Submit tasks
@@ -64,13 +64,13 @@ tq.put(fib, 5, name="fib-interval", eta="8s")
 Start a process-based worker for CPU-bound tasks:
 
 ```sh
-tq runner --worker-type process
+tq -a 0.0.0.0 --worker-type process --log-level DEBUG
 ```
 
 Start an actor-based worker for I/O-bound tasks (default):
 
 ```sh
-tq runner --worker-type actor
+tq -a 0.0.0.0 --worker-type actor --log-level DEBUG
 ```
 
 ### Backend URL
