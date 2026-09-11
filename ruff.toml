@@ -1,0 +1,12 @@
+target-version = "py314"
+line-length = 100
+
+[lint]
+extend-select = ["I"]
+ignore = [
+    "E501",
+]
+
+[format]
+quote-style = "double"
+indent-style = "space"

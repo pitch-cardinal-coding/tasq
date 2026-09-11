@@ -1,0 +1,9 @@
+# User-specific stuff:
+__pycache__
+tags
+.cache
+.idea/
+*.log
+*.conf
+*.egg-info
+.coverage
